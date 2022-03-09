@@ -73,11 +73,11 @@ public class TopicsController {
 	@Value("${AWS_BUCKET}")
 	private String awsBucket;
 
-   @Value("${AWS_DEFAULT_REGION}")
-   private String awsDefaultRegion;
+    @Value("${AWS_DEFAULT_REGION}")
+    private String awsDefaultRegion;
 
-   @Autowired
-   S3Wrapper s3;
+    @Autowired
+    S3Wrapper s3;
 
 	@GetMapping(path = "/topics")
 	public String index(Principal principal, Model model) throws IOException {
